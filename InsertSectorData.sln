@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Insert Sector Data", "Integration Services Project1\Insert Sector Data.dtproj", "{44D604BC-B62D-41D9-99C1-551C69A7AAE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44D604BC-B62D-41D9-99C1-551C69A7AAE3}.Development|Default.ActiveCfg = Development
+		{44D604BC-B62D-41D9-99C1-551C69A7AAE3}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0FC39C2B-A1A6-42B5-AE07-99382906D260}
+	EndGlobalSection
+EndGlobal
