@@ -26,12 +26,12 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-ADB7OE6</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFZNv0962Lka4lD3/EvTizQAAAAACAAAAAAAQZgAAAAEAACAAAABnFiyayHfU//hQQ3Y5xml9qMdwW3IjgjSTjjiVZcqkowAAAAAOgAAAAAIAACAAAABTfX+ituhPr49wqCyX2kfxXZsx8GB4C1rGSsfvF4HKfZAAAADSZ07VH3P1qfMuZ30+Uq5F7W00/5+GXYdEWahR/ogoLkX9fgWYQV52REQ+II3BO44XNdJ8jdbnbsRvcZtz2m63R8aMMd0T/2qCaUXxx6yFQOjVSEZtH8k1sFuqD3QN1NSCrj2OErjp9zHXvpOgrb5X83p6H9QSu64YZB6HCkcD9ddO7yCZWqTZbqVnVs5br+1AAAAAtj/nTH4XBTirPv0B1pljy8auoc+j35bPILIWr9Z4pxWwhbemExTGK+TmT5B0ABunfUl0VW8GBWwW2tW9Wo0Aow==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFZNv0962Lka4lD3/EvTizQAAAAACAAAAAAAQZgAAAAEAACAAAAAhj1HrOoDozS3ehkVd52o/PLAhi+vkQb+hUlqw6RQxOgAAAAAOgAAAAAIAACAAAABDfWZQf+ZzXeQpSLcaIrj7gxBFRXR1zbY66ZGkJpMvHJAAAABn0KMxj7oiNzKB8Y71ai7dDblrEOPpZkpFsuYNhviUgenwQFgprjdg6BoNmYG6Oq718EoTK640qzxqBdoUdA3zywEjd6FeZSl2sFcmvb0kphlhox3ADEn76TfIn4rOlARiVs11xy6JF/OMMZvch9jgreAVSnlW4XnWWToO8XTgVpSN8tl1slNiXeXyFVl16OdAAAAASrOQHsyAdV7hn4R4Oc+UUYdbHLQC4sbOsuZAf86U1cavfRIbHdfqTsg4vLMi4I5Adlsf7L/oJ4M7/1V4UM939g==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
           <SSIS:Package SSIS:Name="Package.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="DataBankInsertion.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="DataBankInsertionNew.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="LocalHost.StockMarket.conmgr" />
@@ -441,98 +441,22 @@
               </SSIS:Properties>
               <SSIS:Parameters />
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="DataBankInsertion.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="DataBankInsertionNew.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{B10CB36F-DD60-4969-927B-5DFEC450A2CC}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">DataBankInsertion</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{5667E783-B303-4A8D-B5BA-EC0B18B3FB8F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">36</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{9D3C9141-B908-44BF-89A0-78DC9B86B47B}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{D81EA15A-95E0-4C1D-BB17-8F2B19AF78C5}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="CM.DataBank_CM.ConnectByProxy">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DataBank_CM.ConnectionString">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DataBank_CM.RetainData">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">true</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DataBank_CM.UseEncryption">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DataBank_CM.UseFile">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.AlwaysCheckForRowDelimiters">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">

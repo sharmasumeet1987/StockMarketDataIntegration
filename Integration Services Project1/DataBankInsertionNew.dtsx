@@ -1,200 +1,21 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="11/14/2020 5:00:58 PM"
+  DTS:CreationDate="11/15/2020 2:19:05 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-ADB7OE6"
   DTS:CreatorName="DESKTOP-ADB7OE6\Sumee"
-  DTS:DTSID="{B10CB36F-DD60-4969-927B-5DFEC450A2CC}"
+  DTS:DTSID="{5667E783-B303-4A8D-B5BA-EC0B18B3FB8F}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.132"
   DTS:LocaleID="16393"
-  DTS:ObjectName="DataBankInsertion"
+  DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="37"
-  DTS:VersionGUID="{8F1C3C15-AD77-4725-A2B3-D8D09A3691E8}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{D9CE7DC2-66D1-4F62-8B8A-0B523C38BD86}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DataBank_CM]"
-      DTS:CreationName="CACHE"
-      DTS:DTSID="{C249FBA0-8AE9-4A8D-BCA1-8857E8E40034}"
-      DTS:ObjectName="DataBank_CM">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager>
-          <DTS:CacheColumns>
-            <DTS:CacheColumn
-              DTS:DataType="129"
-              DTS:Length="40"
-              DTS:CodePage="1252"
-              DTS:IndexPosition="1"
-              DTS:ObjectName="DT_BSESymbol"
-              DTS:DTSID="{C97209E0-7D40-4D17-8F2B-0E3EF9F7F508}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="129"
-              DTS:Length="50"
-              DTS:CodePage="1252"
-              DTS:ObjectName="DT_CompanyName"
-              DTS:DTSID="{04FF3A02-0A36-410A-A4AD-E68A69382676}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="6"
-              DTS:ObjectName="DT_FaceValue"
-              DTS:DTSID="{E5CF1120-A7C6-41EF-ACA4-FBFD24376BE0}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="2"
-              DTS:ObjectName="DT_AuditedYear"
-              DTS:DTSID="{2621AE79-0C8F-40B4-B338-9F3680E98C38}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="6"
-              DTS:ObjectName="DT_CurrentEquity"
-              DTS:DTSID="{5587248C-BEF6-4C80-BB1F-6BFDB8946987}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="6"
-              DTS:ObjectName="DT_BookValue"
-              DTS:DTSID="{E060CB0B-032B-4246-8E79-D816D24A7D71}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="6"
-              DTS:ObjectName="DT_Sales"
-              DTS:DTSID="{84F8E5B1-E112-4D49-9A6B-06C95F142A77}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="6"
-              DTS:ObjectName="DT_NetProfit"
-              DTS:DTSID="{BE58ADF8-F3E1-40C7-AFCF-481B89A00A53}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="6"
-              DTS:ObjectName="Copy of EPS"
-              DTS:DTSID="{686B0A1C-F760-473E-8487-208F274EEA10}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="6"
-              DTS:ObjectName="Copy of Dividend"
-              DTS:DTSID="{5EBBC11A-13A9-49A0-8612-D701F283E81F}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="14"
-              DTS:Scale="2"
-              DTS:ObjectName="Copy of DebtEquityRatio"
-              DTS:DTSID="{ED752BA9-18D5-4EEA-BBC3-26CC2EA6EDD1}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="14"
-              DTS:Scale="2"
-              DTS:ObjectName="Copy of RONW"
-              DTS:DTSID="{97F1492A-15EB-4ED8-97F3-B13B7A203ED3}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="2"
-              DTS:ObjectName="Copy of LatQtrYear"
-              DTS:DTSID="{3439D8F1-CFD8-4B91-83E8-94B34E02B770}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="6"
-              DTS:ObjectName="Copy of LatQtrSales"
-              DTS:DTSID="{C221EC52-711A-46BC-883A-F6A06789FAFC}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="6"
-              DTS:ObjectName="Copy of LatQtrNetProfit"
-              DTS:DTSID="{D584C179-5691-4A7D-A446-88D5B4E8A9D8}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="129"
-              DTS:Length="10"
-              DTS:CodePage="1252"
-              DTS:ObjectName="Copy of Y2DYearMonth"
-              DTS:DTSID="{1A231F66-7329-4755-920D-712402CEED88}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="6"
-              DTS:ObjectName="Copy of Y2DSales"
-              DTS:DTSID="{1CFE81AC-4FD3-44C2-8C4B-6AC82A086BC7}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="14"
-              DTS:ObjectName="Copy of Y2DSalesGrowth"
-              DTS:DTSID="{0111C186-FA28-443C-B908-BC3CC3E95419}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="6"
-              DTS:ObjectName="Copy of Y2DNetProfit"
-              DTS:DTSID="{E9975607-891D-4DF7-BD21-1CFF879680C9}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="14"
-              DTS:Scale="2"
-              DTS:ObjectName="Copy of Y2DNetProfitGrowth"
-              DTS:DTSID="{10C2C021-364A-48CE-BDC6-CCAA24750064}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="14"
-              DTS:Scale="2"
-              DTS:ObjectName="Copy of PromoterHolding"
-              DTS:DTSID="{15AB3E9B-89DA-453B-944C-0D4EB57F1E66}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="14"
-              DTS:Scale="2"
-              DTS:ObjectName="Copy of PledgedHolding"
-              DTS:DTSID="{AF869FB3-44E5-4B50-921B-2DD865804F0B}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="14"
-              DTS:Scale="2"
-              DTS:ObjectName="Copy of InstitutionalHolding"
-              DTS:DTSID="{6DF6E1BE-4E67-4351-8A98-23D2A72595F9}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="3"
-              DTS:ObjectName="Copy of NoOfShareHolders"
-              DTS:DTSID="{E0F78D7C-A200-4004-B5FE-86A608C8AC1A}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="6"
-              DTS:ObjectName="Copy of MarketCap"
-              DTS:DTSID="{AED3F2E4-780A-4906-92E7-8C604715D734}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="129"
-              DTS:Length="50"
-              DTS:CodePage="1252"
-              DTS:ObjectName="Copy of FiftyTwoWeekHigh"
-              DTS:DTSID="{0170EEAD-C5A6-4BAA-A686-05F110DDACF8}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="6"
-              DTS:ObjectName="Copy of EnterpriseValue"
-              DTS:DTSID="{EF9E2CB3-62A4-424E-9BE6-3058B738ABF8}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="14"
-              DTS:ObjectName="Copy of PERatio"
-              DTS:DTSID="{4A239B7A-93B6-4470-812D-4C95F3E81D92}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="129"
-              DTS:Length="250"
-              DTS:CodePage="1252"
-              DTS:ObjectName="Copy of Sector"
-              DTS:DTSID="{E3485949-1D36-45E3-90A3-D518A701F362}"
-              DTS:CreationName="" />
-            <DTS:CacheColumn
-              DTS:DataType="6"
-              DTS:ObjectName="Copy of Price"
-              DTS:DTSID="{2153E407-E8FE-43F6-816B-47322237DD2B}"
-              DTS:CreationName="" />
-          </DTS:CacheColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
       DTS:CreationName="FLATFILE"
@@ -1066,7 +887,7 @@
       DTS:refId="Package\Read excel file to Cache"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{4868A7CC-2738-41A1-8316-B31A78ADB2CC}"
+      DTS:DTSID="{04b8630a-2c88-4de6-9553-84cb67fea6cf}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Read excel file to Cache"
@@ -1313,11 +1134,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_FaceValue]"
-                      dataType="cy"
+                      dataType="decimal"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_FaceValue]"
                       name="DT_FaceValue"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1333,11 +1155,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_CurrentEquity]"
-                      dataType="cy"
+                      dataType="decimal"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_CurrentEquity]"
                       name="DT_CurrentEquity"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1353,11 +1176,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_BookValue]"
-                      dataType="cy"
+                      dataType="decimal"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_BookValue]"
                       name="DT_BookValue"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1373,11 +1197,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_Sales]"
-                      dataType="cy"
+                      dataType="decimal"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_Sales]"
                       name="DT_Sales"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1393,11 +1218,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_NetProfit]"
-                      dataType="cy"
+                      dataType="decimal"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_NetProfit]"
                       name="DT_NetProfit"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1413,11 +1239,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of EPS]"
-                      dataType="cy"
+                      dataType="decimal"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of EPS]"
                       name="Copy of EPS"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1433,11 +1260,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Dividend]"
-                      dataType="cy"
+                      dataType="decimal"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Dividend]"
                       name="Copy of Dividend"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1458,7 +1286,7 @@
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DebtEquityRatio]"
                       name="Copy of DebtEquityRatio"
-                      scale="2"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1479,7 +1307,7 @@
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of RONW]"
                       name="Copy of RONW"
-                      scale="2"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1515,11 +1343,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of LatQtrSales]"
-                      dataType="cy"
+                      dataType="decimal"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of LatQtrSales]"
                       name="Copy of LatQtrSales"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1535,11 +1364,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of LatQtrNetProfit]"
-                      dataType="cy"
+                      dataType="decimal"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of LatQtrNetProfit]"
                       name="Copy of LatQtrNetProfit"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1577,11 +1407,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Y2DSales]"
-                      dataType="cy"
+                      dataType="decimal"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Y2DSales]"
                       name="Copy of Y2DSales"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1602,6 +1433,7 @@
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Y2DSalesGrowth]"
                       name="Copy of Y2DSalesGrowth"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1617,11 +1449,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Y2DNetProfit]"
-                      dataType="cy"
+                      dataType="decimal"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Y2DNetProfit]"
                       name="Copy of Y2DNetProfit"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1642,7 +1475,7 @@
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Y2DNetProfitGrowth]"
                       name="Copy of Y2DNetProfitGrowth"
-                      scale="2"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1663,7 +1496,7 @@
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PromoterHolding]"
                       name="Copy of PromoterHolding"
-                      scale="2"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1684,7 +1517,7 @@
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PledgedHolding]"
                       name="Copy of PledgedHolding"
-                      scale="2"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1705,7 +1538,7 @@
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of InstitutionalHolding]"
                       name="Copy of InstitutionalHolding"
-                      scale="2"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1741,11 +1574,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MarketCap]"
-                      dataType="cy"
+                      dataType="decimal"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MarketCap]"
                       name="Copy of MarketCap"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1761,11 +1595,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FiftyTwoWeekHigh]"
-                      dataType="cy"
+                      dataType="decimal"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FiftyTwoWeekHigh]"
                       name="Copy of FiftyTwoWeekHigh"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1781,11 +1616,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of EnterpriseValue]"
-                      dataType="cy"
+                      dataType="decimal"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of EnterpriseValue]"
                       name="Copy of EnterpriseValue"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1806,6 +1642,7 @@
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PERatio]"
                       name="Copy of PERatio"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1843,11 +1680,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Price]"
-                      dataType="cy"
+                      dataType="decimal"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Price]"
                       name="Copy of Price"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -1863,11 +1701,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FiftyTwoWeekLow]"
-                      dataType="cy"
+                      dataType="decimal"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FiftyTwoWeekLow]"
                       name="Copy of FiftyTwoWeekLow"
+                      scale="4"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -2307,8 +2146,7 @@
                       name="FaceValue" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\DataBank file.Outputs[Excel Source Output].ExternalColumns[AuditedYear]"
-                      dataType="wstr"
-                      length="255"
+                      dataType="r8"
                       name="AuditedYear" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\DataBank file.Outputs[Excel Source Output].ExternalColumns[CurrentEquity]"
@@ -2448,8 +2286,7 @@
                       name="FaceValue" />
                     <outputColumn
                       refId="Package\Read excel file to Cache\DataBank file.Outputs[Excel Source Error Output].Columns[AuditedYear]"
-                      dataType="wstr"
-                      length="255"
+                      dataType="r8"
                       lineageId="Package\Read excel file to Cache\DataBank file.Outputs[Excel Source Error Output].Columns[AuditedYear]"
                       name="AuditedYear" />
                     <outputColumn
@@ -3366,58 +3203,65 @@
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_CompanyName]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[DT_FaceValue]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="DT_FaceValue"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[DT_FaceValue]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_FaceValue]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[DT_CurrentEquity]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="DT_CurrentEquity"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[DT_CurrentEquity]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_CurrentEquity]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[DT_BookValue]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="DT_BookValue"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[DT_BookValue]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_BookValue]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[DT_Sales]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="DT_Sales"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[DT_Sales]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_Sales]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[DT_NetProfit]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="DT_NetProfit"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[DT_NetProfit]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_NetProfit]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Copy of EPS]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of EPS"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of EPS]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of EPS]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Copy of Dividend]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of Dividend"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of Dividend]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Dividend]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Copy of DebtEquityRatio]"
                       cachedDataType="decimal"
                       cachedName="Copy of DebtEquityRatio"
-                      cachedScale="2"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of DebtEquityRatio]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DebtEquityRatio]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Copy of RONW]"
                       cachedDataType="decimal"
                       cachedName="Copy of RONW"
-                      cachedScale="2"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of RONW]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of RONW]" />
                     <inputColumn
@@ -3428,14 +3272,16 @@
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of LatQtrYear]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Copy of LatQtrSales]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of LatQtrSales"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of LatQtrSales]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of LatQtrSales]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Copy of LatQtrNetProfit]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of LatQtrNetProfit"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of LatQtrNetProfit]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of LatQtrNetProfit]" />
                     <inputColumn
@@ -3448,48 +3294,51 @@
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Y2DYearMonth]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Copy of Y2DSales]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of Y2DSales"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of Y2DSales]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Y2DSales]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Copy of Y2DSalesGrowth]"
                       cachedDataType="decimal"
                       cachedName="Copy of Y2DSalesGrowth"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of Y2DSalesGrowth]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Y2DSalesGrowth]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Copy of Y2DNetProfit]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of Y2DNetProfit"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of Y2DNetProfit]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Y2DNetProfit]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Copy of Y2DNetProfitGrowth]"
                       cachedDataType="decimal"
                       cachedName="Copy of Y2DNetProfitGrowth"
-                      cachedScale="2"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of Y2DNetProfitGrowth]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Y2DNetProfitGrowth]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Copy of PromoterHolding]"
                       cachedDataType="decimal"
                       cachedName="Copy of PromoterHolding"
-                      cachedScale="2"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of PromoterHolding]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PromoterHolding]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Copy of PledgedHolding]"
                       cachedDataType="decimal"
                       cachedName="Copy of PledgedHolding"
-                      cachedScale="2"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of PledgedHolding]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PledgedHolding]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Copy of InstitutionalHolding]"
                       cachedDataType="decimal"
                       cachedName="Copy of InstitutionalHolding"
-                      cachedScale="2"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of InstitutionalHolding]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of InstitutionalHolding]" />
                     <inputColumn
@@ -3500,26 +3349,30 @@
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NoOfShareHolders]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Copy of MarketCap]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of MarketCap"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of MarketCap]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MarketCap]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Copy of FiftyTwoWeekHigh]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of FiftyTwoWeekHigh"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of FiftyTwoWeekHigh]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FiftyTwoWeekHigh]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Copy of EnterpriseValue]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of EnterpriseValue"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of EnterpriseValue]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of EnterpriseValue]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Copy of PERatio]"
                       cachedDataType="decimal"
                       cachedName="Copy of PERatio"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of PERatio]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PERatio]" />
                     <inputColumn
@@ -3532,14 +3385,16 @@
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Sector]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Copy of Price]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of Price"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of Price]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Price]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[Copy of FiftyTwoWeekLow]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of FiftyTwoWeekLow"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of FiftyTwoWeekLow]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FiftyTwoWeekLow]" />
                     <inputColumn
@@ -3953,70 +3808,79 @@
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_CompanyName]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DT_FaceValue]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="DT_FaceValue"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FaceValue]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_FaceValue]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DT_CurrentEquity]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="DT_CurrentEquity"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CurrentEquity]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_CurrentEquity]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DT_BookValue]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="DT_BookValue"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BookValue]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_BookValue]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DT_Sales]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="DT_Sales"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Sales]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_Sales]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DT_NetProfit]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="DT_NetProfit"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NetProfit]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[DT_NetProfit]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of EPS]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of EPS"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EPS]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of EPS]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Dividend]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of Dividend"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Dividend]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Dividend]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of DebtEquityRatio]"
                       cachedDataType="decimal"
                       cachedName="Copy of DebtEquityRatio"
-                      cachedScale="2"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DebtEquityRatio]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DebtEquityRatio]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of RONW]"
                       cachedDataType="decimal"
                       cachedName="Copy of RONW"
-                      cachedScale="2"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RONW]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of RONW]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of LatQtrSales]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of LatQtrSales"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LatQtrSales]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of LatQtrSales]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of LatQtrNetProfit]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of LatQtrNetProfit"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LatQtrNetProfit]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of LatQtrNetProfit]" />
                     <inputColumn
@@ -4029,48 +3893,51 @@
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Y2DYearMonth]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Y2DSales]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of Y2DSales"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Y2DSales]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Y2DSales]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Y2DSalesGrowth]"
                       cachedDataType="decimal"
                       cachedName="Copy of Y2DSalesGrowth"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Y2DSalesGrowth]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Y2DSalesGrowth]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Y2DNetProfit]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of Y2DNetProfit"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Y2DNetProfit]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Y2DNetProfit]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Y2DNetProfitGrowth]"
                       cachedDataType="decimal"
                       cachedName="Copy of Y2DNetProfitGrowth"
-                      cachedScale="2"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Y2DNetProfitGrowth]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Y2DNetProfitGrowth]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of PromoterHolding]"
                       cachedDataType="decimal"
                       cachedName="Copy of PromoterHolding"
-                      cachedScale="2"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PromoterHolding]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PromoterHolding]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of PledgedHolding]"
                       cachedDataType="decimal"
                       cachedName="Copy of PledgedHolding"
-                      cachedScale="2"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PledgedHolding]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PledgedHolding]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of InstitutionalHolding]"
                       cachedDataType="decimal"
                       cachedName="Copy of InstitutionalHolding"
-                      cachedScale="2"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[InstitutionalHolding]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of InstitutionalHolding]" />
                     <inputColumn
@@ -4081,32 +3948,37 @@
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NoOfShareHolders]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of MarketCap]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of MarketCap"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MarketCap]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MarketCap]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Price]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of Price"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Price]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Price]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of FiftyTwoWeekHigh]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of FiftyTwoWeekHigh"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FiftyTwoWeekHigh]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FiftyTwoWeekHigh]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of EnterpriseValue]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of EnterpriseValue"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EnterpriseValue]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of EnterpriseValue]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of PERatio]"
                       cachedDataType="decimal"
                       cachedName="Copy of PERatio"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PERatio]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PERatio]" />
                     <inputColumn
@@ -4119,8 +3991,9 @@
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Sector]" />
                     <inputColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of FiftyTwoWeekLow]"
-                      cachedDataType="cy"
+                      cachedDataType="decimal"
                       cachedName="Copy of FiftyTwoWeekLow"
+                      cachedScale="4"
                       externalMetadataColumnId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FiftyTwoWeekLow]"
                       lineageId="Package\Read excel file to Cache\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FiftyTwoWeekLow]" />
                     <inputColumn
@@ -4152,60 +4025,80 @@
                       name="CompanyName" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FaceValue]"
-                      dataType="cy"
-                      name="FaceValue" />
+                      dataType="numeric"
+                      name="FaceValue"
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AuditedYear]"
-                      dataType="i2"
-                      name="AuditedYear" />
+                      dataType="numeric"
+                      name="AuditedYear"
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CurrentEquity]"
-                      dataType="cy"
-                      name="CurrentEquity" />
+                      dataType="numeric"
+                      name="CurrentEquity"
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BookValue]"
-                      dataType="cy"
-                      name="BookValue" />
+                      dataType="numeric"
+                      name="BookValue"
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Sales]"
-                      dataType="cy"
-                      name="Sales" />
+                      dataType="numeric"
+                      name="Sales"
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NetProfit]"
-                      dataType="cy"
-                      name="NetProfit" />
+                      dataType="numeric"
+                      name="NetProfit"
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EPS]"
-                      dataType="cy"
-                      name="EPS" />
+                      dataType="numeric"
+                      name="EPS"
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Dividend]"
-                      dataType="cy"
-                      name="Dividend" />
+                      dataType="numeric"
+                      name="Dividend"
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DebtEquityRatio]"
                       dataType="numeric"
                       name="DebtEquityRatio"
-                      precision="5"
-                      scale="2" />
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RONW]"
                       dataType="numeric"
                       name="RONW"
-                      precision="5"
-                      scale="2" />
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LatQtrYear]"
                       dataType="i2"
                       name="LatQtrYear" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LatQtrSales]"
-                      dataType="cy"
-                      name="LatQtrSales" />
+                      dataType="numeric"
+                      name="LatQtrSales"
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LatQtrNetProfit]"
-                      dataType="cy"
-                      name="LatQtrNetProfit" />
+                      dataType="numeric"
+                      name="LatQtrNetProfit"
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Y2DYearMonth]"
                       codePage="1252"
@@ -4214,68 +4107,80 @@
                       name="Y2DYearMonth" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Y2DSales]"
-                      dataType="cy"
-                      name="Y2DSales" />
+                      dataType="numeric"
+                      name="Y2DSales"
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Y2DSalesGrowth]"
                       dataType="numeric"
                       name="Y2DSalesGrowth"
-                      precision="10"
-                      scale="2" />
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Y2DNetProfit]"
-                      dataType="cy"
-                      name="Y2DNetProfit" />
+                      dataType="numeric"
+                      name="Y2DNetProfit"
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Y2DNetProfitGrowth]"
                       dataType="numeric"
                       name="Y2DNetProfitGrowth"
-                      precision="10"
-                      scale="2" />
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PromoterHolding]"
                       dataType="numeric"
                       name="PromoterHolding"
-                      precision="5"
-                      scale="2" />
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PledgedHolding]"
                       dataType="numeric"
                       name="PledgedHolding"
-                      precision="5"
-                      scale="2" />
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[InstitutionalHolding]"
                       dataType="numeric"
                       name="InstitutionalHolding"
-                      precision="5"
-                      scale="2" />
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NoOfShareHolders]"
                       dataType="i4"
                       name="NoOfShareHolders" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MarketCap]"
-                      dataType="cy"
-                      name="MarketCap" />
+                      dataType="numeric"
+                      name="MarketCap"
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Price]"
-                      dataType="cy"
-                      name="Price" />
+                      dataType="numeric"
+                      name="Price"
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FiftyTwoWeekHigh]"
-                      dataType="cy"
-                      name="FiftyTwoWeekHigh" />
+                      dataType="numeric"
+                      name="FiftyTwoWeekHigh"
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EnterpriseValue]"
-                      dataType="cy"
-                      name="EnterpriseValue" />
+                      dataType="numeric"
+                      name="EnterpriseValue"
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PERatio]"
                       dataType="numeric"
                       name="PERatio"
-                      precision="7"
-                      scale="2" />
+                      precision="19"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Sector]"
                       codePage="1252"
@@ -4284,8 +4189,10 @@
                       name="Sector" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FiftyTwoWeekLow]"
-                      dataType="cy"
-                      name="FiftyTwoWeekLow" />
+                      dataType="numeric"
+                      name="FiftyTwoWeekLow"
+                      precision="19"
+                      scale="4" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -4346,29 +4253,6 @@
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
-  <DTS:EventHandlers>
-    <DTS:EventHandler
-      DTS:refId="Package.EventHandlers[OnPreExecute]"
-      DTS:CreationName="OnPreExecute"
-      DTS:DTSID="{F7A6A1B9-1FDE-4C86-88E9-7169554AAAFF}"
-      DTS:EventID="410"
-      DTS:EventName="OnPreExecute"
-      DTS:LocaleID="-1">
-      <DTS:Variables>
-        <DTS:Variable
-          DTS:CreationName=""
-          DTS:Description="The propagate property of the event"
-          DTS:DTSID="{A498B20C-CDF5-4B5F-BBE0-D78B2A90B6F4}"
-          DTS:IncludeInDebugDump="6789"
-          DTS:Namespace="System"
-          DTS:ObjectName="Propagate">
-          <DTS:VariableValue
-            DTS:DataType="11">-1</DTS:VariableValue>
-        </DTS:Variable>
-      </DTS:Variables>
-      <DTS:Executables />
-    </DTS:EventHandler>
-  </DTS:EventHandlers>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -4384,7 +4268,7 @@
         <NodeLayout
           Size="190.4,41.6"
           Id="Package\Read excel file to Cache"
-          TopLeft="561.333311246502,25.4333334917492" />
+          TopLeft="60,60" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -4398,17 +4282,61 @@
           Id="Package\Read excel file to Cache\OLE DB Destination"
           TopLeft="340.833319789834,360.533336198595" />
         <NodeLayout
-          Size="156,41.6"
-          Id="Package\Read excel file to Cache\Data Conversion"
-          TopLeft="277.999991556009,244.033334752189" />
+          Size="179.2,41.6"
+          Id="Package\Read excel file to Cache\Flat File Destination 1"
+          TopLeft="713.333304988015,421.200003347397" />
         <NodeLayout
           Size="152,41.6"
           Id="Package\Read excel file to Cache\Derived Column"
           TopLeft="239.166657163037,130.000001033147" />
         <NodeLayout
+          Size="156,41.6"
+          Id="Package\Read excel file to Cache\Data Conversion"
+          TopLeft="277.999991556009,244.033334752189" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Read excel file to Cache\Flat File Destination"
+          TopLeft="597.499976257484,195.866668223275" />
+        <NodeLayout
           Size="140,41.6"
           Id="Package\Read excel file to Cache\DataBank file"
           TopLeft="233.833324260182,33.2333335537381" />
+        <EdgeLayout
+          Id="Package\Read excel file to Cache.Paths[OLE DB Destination Error Output]"
+          TopLeft="512.033319789834,381.333336198595">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="201.29998519818,60.6666671488018"
+              Start="0,0"
+              End="193.79998519818,60.6666671488018">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="96.6499925990902,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="96.6499925990902,0"
+                    Point2="100.64999259909,0"
+                    Point3="100.64999259909,4" />
+                  <mssgle:LineSegment
+                    End="100.64999259909,56.6666671488018" />
+                  <mssgle:CubicBezierSegment
+                    Point1="100.64999259909,56.6666671488018"
+                    Point2="100.64999259909,60.6666671488018"
+                    Point3="104.64999259909,60.6666671488018" />
+                  <mssgle:LineSegment
+                    End="193.79998519818,60.6666671488018" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="27.4410863490902,-17.43359375,146.4178125,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Read excel file to Cache.Paths[Excel Source Output]"
           TopLeft="303.833324260182,74.8333335537381">
@@ -4440,9 +4368,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-2.33333354857248,32.5833337397044,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4476,51 +4402,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="12.4166671964858,41.2166668595208,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Read excel file to Cache.Paths[Data Conversion Output]"
-          TopLeft="355.999991556009,285.633334752189">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="70.4333282338253,74.9000014464062"
-              Start="0,0"
-              End="70.4333282338253,67.4000014464062">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.4500007232031" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.4500007232031"
-                    Point2="0,37.4500007232031"
-                    Point3="4,37.4500007232031" />
-                  <mssgle:LineSegment
-                    End="66.4333282338253,37.4500007232031" />
-                  <mssgle:CubicBezierSegment
-                    Point1="66.4333282338253,37.4500007232031"
-                    Point2="70.4333282338253,37.4500007232031"
-                    Point3="70.4333282338253,41.4500007232031" />
-                  <mssgle:LineSegment
-                    End="70.4333282338253,67.4000014464062" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="27.2166641169127,42.4500007232031,16,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Read excel file to Cache\Flat File Destination"
-          TopLeft="597.499976257484,195.866668223275" />
         <EdgeLayout
           Id="Package\Read excel file to Cache.Paths[Derived Column Error Output]"
           TopLeft="339.166657163037,171.600001033147">
@@ -4557,44 +4441,38 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="179.2,41.6"
-          Id="Package\Read excel file to Cache\Flat File Destination 1"
-          TopLeft="713.333304988015,421.200003347397" />
         <EdgeLayout
-          Id="Package\Read excel file to Cache.Paths[OLE DB Destination Error Output]"
-          TopLeft="512.033319789834,381.333336198595">
+          Id="Package\Read excel file to Cache.Paths[Data Conversion Output]"
+          TopLeft="355.999991556009,285.633334752189">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="201.29998519818,60.6666671488018"
+              EndConnector="70.4333282338253,74.9000014464062"
               Start="0,0"
-              End="193.79998519818,60.6666671488018">
+              End="70.4333282338253,67.4000014464062">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="96.6499925990902,0" />
+                    End="0,33.4500007232031" />
                   <mssgle:CubicBezierSegment
-                    Point1="96.6499925990902,0"
-                    Point2="100.64999259909,0"
-                    Point3="100.64999259909,4" />
+                    Point1="0,33.4500007232031"
+                    Point2="0,37.4500007232031"
+                    Point3="4,37.4500007232031" />
                   <mssgle:LineSegment
-                    End="100.64999259909,56.6666671488018" />
+                    End="66.4333282338253,37.4500007232031" />
                   <mssgle:CubicBezierSegment
-                    Point1="100.64999259909,56.6666671488018"
-                    Point2="100.64999259909,60.6666671488018"
-                    Point3="104.64999259909,60.6666671488018" />
+                    Point1="66.4333282338253,37.4500007232031"
+                    Point2="70.4333282338253,37.4500007232031"
+                    Point3="70.4333282338253,41.4500007232031" />
                   <mssgle:LineSegment
-                    End="193.79998519818,60.6666671488018" />
+                    End="70.4333282338253,67.4000014464062" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="27.4410863490902,-17.43359375,146.4178125,11.43359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
