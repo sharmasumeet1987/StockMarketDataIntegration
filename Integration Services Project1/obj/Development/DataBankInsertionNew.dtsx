@@ -11,11 +11,21 @@
   DTS:LocaleID="16393"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{D81EA15A-95E0-4C1D-BB17-8F2B19AF78C5}">
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{F9439097-9CBE-41AF-85E1-F60917E75D52}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 2]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{6CCEF763-DC18-4D9A-9799-25CB40F7BCF1}"
+      DTS:ObjectName="Excel Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\workspace\stock-market\integration-project\DataBank.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
       DTS:CreationName="FLATFILE"
@@ -38,7 +48,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="BSESymbol"
-              DTS:DTSID="{348CB4FC-B4D9-4F6B-BB86-262F451A7029}"
+              DTS:DTSID="{D9E98DE1-F04F-40BC-95AE-E54B1B478228}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -47,7 +57,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CompanyName"
-              DTS:DTSID="{C5DC8CF1-0E52-4914-90BA-20D386626CB6}"
+              DTS:DTSID="{54B242A1-9BEB-446B-B1C9-DEF5CCFA88BD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -55,7 +65,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="FaceValue"
-              DTS:DTSID="{A2466A26-4ED3-462F-A9AB-A1B2EE6B7A0B}"
+              DTS:DTSID="{AA47571B-1841-4A0C-ACDB-5E1477FAF1F5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -64,7 +74,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="AuditedYear"
-              DTS:DTSID="{6714D2AF-058E-4874-BD55-1CD454CB3CFC}"
+              DTS:DTSID="{C504F4EB-BE14-4143-AFC2-44069895ADE3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -72,7 +82,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="CurrentEquity"
-              DTS:DTSID="{C7C6612A-88D1-416C-978C-48870BEF5EC1}"
+              DTS:DTSID="{D96FACB8-5C89-40E0-A216-1C3BBCB78B44}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -80,7 +90,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="BookValue"
-              DTS:DTSID="{9201D5CE-1D52-43EA-A7CF-DC8B1A956985}"
+              DTS:DTSID="{8492BD40-FBE1-449E-B6F2-54FF99E1F33A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -88,7 +98,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="Sales"
-              DTS:DTSID="{AAE79EA4-91BC-42AB-B930-6AE7E5A5F7A4}"
+              DTS:DTSID="{A39403D5-0961-4B38-A416-4D485E85C994}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -96,7 +106,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="NetProfit"
-              DTS:DTSID="{7BFA3E08-3F43-457E-BAFB-6D837FD02E7C}"
+              DTS:DTSID="{7E54093B-DEAB-4995-9C9D-A23D3F8DD482}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -104,7 +114,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="EPS"
-              DTS:DTSID="{78B4FE03-7377-4092-ADC7-6035C1620247}"
+              DTS:DTSID="{C6F50CB2-2DA9-4200-9A90-F419B0E1831A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -112,7 +122,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="Dividend"
-              DTS:DTSID="{FE3C51E7-825C-4F60-B57F-864B598473C5}"
+              DTS:DTSID="{9A5EA2C3-2BC8-4880-AA55-F19FF555F237}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -120,7 +130,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="DebtEquityRatio"
-              DTS:DTSID="{7134004A-038D-4F0C-98CA-AE04E8B6DE1B}"
+              DTS:DTSID="{AAA33FDA-0C9C-41EE-ACB7-3423B5256DA2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -128,7 +138,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="RONW"
-              DTS:DTSID="{4D18183E-3A47-490E-A62A-95B8D4C40C43}"
+              DTS:DTSID="{C9775EB8-EABB-4144-AF51-CEAF499483DB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -137,7 +147,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="LatQtrYear"
-              DTS:DTSID="{20F9FB74-1377-4B76-815A-4B5BC8FCA6CC}"
+              DTS:DTSID="{D21C97B6-E196-4939-89C8-9C3370BCD180}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -145,7 +155,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="LatQtrSales"
-              DTS:DTSID="{0474017C-2DD0-4D98-B9C7-FA174D5608DA}"
+              DTS:DTSID="{F2732786-5EDD-47F9-9153-7DE0D662942E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -153,7 +163,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="LatQtrNetProfit"
-              DTS:DTSID="{B86B5E6B-D653-402F-8212-193320212245}"
+              DTS:DTSID="{7924A4BD-B74E-41A5-BF64-940BE8ADC6B5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -162,7 +172,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Y2DYearMonth"
-              DTS:DTSID="{D061A58B-F768-4F90-8E61-AE160B083D84}"
+              DTS:DTSID="{C4C5738E-7431-4958-A08E-B14F5F102119}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -170,7 +180,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="Y2DSales"
-              DTS:DTSID="{F3BCF842-6356-46AB-9B13-F9AD2D239EC9}"
+              DTS:DTSID="{8792CC61-8031-448B-8FB3-A378318CEB66}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -178,7 +188,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="Y2DSalesGrowth"
-              DTS:DTSID="{301CE8F9-905D-46E8-AEB6-17DEB9F8BC52}"
+              DTS:DTSID="{D18061A2-95DB-4753-930D-3D046B24303C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -186,7 +196,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="Y2DNetProfit"
-              DTS:DTSID="{5E0710C6-2C9A-4673-8BB1-4C5BEC175033}"
+              DTS:DTSID="{29267B11-07C5-4075-99FC-C8B12BB6377C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -194,7 +204,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="Y2DNetProfitGrowth"
-              DTS:DTSID="{6382B7BB-EA5B-4B3B-AC94-F7F9EB443588}"
+              DTS:DTSID="{9C66582B-0A40-4EAA-8E89-63A35FE38B08}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -202,7 +212,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="PromoterHolding"
-              DTS:DTSID="{8E441F9F-B2E7-4B69-8882-5CEA86A9A631}"
+              DTS:DTSID="{E9E261DA-87A3-4333-A92B-6C3DF4DAA521}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -210,7 +220,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="PledgedHolding"
-              DTS:DTSID="{B128EDEB-6A4B-4480-915B-2F87E893AB46}"
+              DTS:DTSID="{4DE9CCB1-BA86-4923-8C65-D363D5E083F1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -218,7 +228,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="InstitutionalHolding"
-              DTS:DTSID="{FC071EAC-6E4E-4E85-92DC-8C9AE7FDE03E}"
+              DTS:DTSID="{AD9B4972-8742-450E-AB19-73C7A57DBFD9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -226,7 +236,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="NoOfShareHolders"
-              DTS:DTSID="{E16F79B4-2B22-4A47-BCF7-7E667ED71444}"
+              DTS:DTSID="{A1BCE5F4-A96F-460C-80AB-19F03389600E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -234,7 +244,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="MarketCap"
-              DTS:DTSID="{743BA96F-B53F-4951-817A-E18B8EA28575}"
+              DTS:DTSID="{640A16D8-7C94-4AC6-93CA-F3D22D4D97A3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -242,7 +252,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="FiftyTwoWeekHigh"
-              DTS:DTSID="{307EC7BD-2DDC-4399-99EF-A90FBEA8F645}"
+              DTS:DTSID="{D6AF3749-9AE9-4AD4-BFAF-645EAFDA228A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -251,7 +261,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="EnterpriseValue"
-              DTS:DTSID="{36B71B82-C5BD-4D64-83FA-9248A95B026A}"
+              DTS:DTSID="{708672E3-578D-4EC6-8017-678CDC077B85}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -259,7 +269,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="PERatio"
-              DTS:DTSID="{36CE111A-65C7-48C6-8CA2-8FDEB094DA06}"
+              DTS:DTSID="{5AB0859E-54FB-458B-BD08-38DBB841CF91}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -268,7 +278,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Sector"
-              DTS:DTSID="{AA69F279-C8A6-4693-8267-4B7117913917}"
+              DTS:DTSID="{A25854AE-59C8-4038-83E7-DED3168E2377}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -276,7 +286,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="Price"
-              DTS:DTSID="{20C0F01A-7ED4-4356-8881-1BD08F852218}"
+              DTS:DTSID="{EB9F68BD-764C-4F7C-8292-E5AB7F955385}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -285,7 +295,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FiftyTwoWeekLow"
-              DTS:DTSID="{3FE498F8-F706-4AF1-885A-E8B8A808DFD5}"
+              DTS:DTSID="{B616D76B-455C-43E2-BBB7-F2F338486063}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -293,7 +303,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{E0E8CC4C-C4E2-4849-A46D-2EB6F6C50FB1}"
+              DTS:DTSID="{DBCA517B-C133-4610-8CBE-45442DF903ED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -301,7 +311,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{EDE26596-A2C3-46F8-BC21-CE323AAC5C2C}"
+              DTS:DTSID="{979F0E9A-2E03-4D52-8E22-877FB4891849}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -320,7 +330,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\workspace\integration-project\FinalStepError.txt">
+          DTS:ConnectionString="D:\workspace\stock-market\integration-project\FinalStepError.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -329,7 +339,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="BSESymbol"
-              DTS:DTSID="{CAE9DE3C-496A-43CF-A676-776FA659C80F}"
+              DTS:DTSID="{6B63CD40-0197-40CF-846E-5F26BAF6E5ED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -338,7 +348,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CompanyName"
-              DTS:DTSID="{1D6E12C9-609B-4F22-BEB0-D158B130F326}"
+              DTS:DTSID="{C000DBFC-3182-4C96-88B5-FECD6D7AF46A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -346,7 +356,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="FaceValue"
-              DTS:DTSID="{1F550034-0E5F-4779-B32E-D79034B33B45}"
+              DTS:DTSID="{D6A54C63-7420-4EC9-B3FA-5D63A1CAB21B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -355,7 +365,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="AuditedYear"
-              DTS:DTSID="{BD34C4EF-B091-4399-B18E-37E4C34A1F56}"
+              DTS:DTSID="{8D16327A-CBEA-4D99-88AE-D014B6C4980F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -363,7 +373,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="CurrentEquity"
-              DTS:DTSID="{96E21E0B-E4AE-4EF2-A854-53DAE04E2045}"
+              DTS:DTSID="{0152266A-6729-45AD-95BA-BF6E48CA65A4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -371,7 +381,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="BookValue"
-              DTS:DTSID="{E31D1FF2-146A-462F-802E-BFE211FD00B3}"
+              DTS:DTSID="{5E63D966-F19A-422F-8F72-458F4714AC56}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -379,7 +389,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="Sales"
-              DTS:DTSID="{F563836F-98BC-4F4A-8468-34D17FD48A3C}"
+              DTS:DTSID="{857D0510-FF7D-4317-A10A-713E56C93B65}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -387,7 +397,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="NetProfit"
-              DTS:DTSID="{5D9B456E-D980-4D51-9DCA-3914757E7E98}"
+              DTS:DTSID="{6AF1D9BC-0B79-47DD-AFC7-A64D814031AA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -395,7 +405,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="EPS"
-              DTS:DTSID="{0B39221B-4BB6-4EA7-AA53-E3ED2D99AA80}"
+              DTS:DTSID="{CE76A23D-F938-45F3-A337-BE1E9FBB8079}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -403,7 +413,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="Dividend"
-              DTS:DTSID="{97EDB102-7037-4CDB-9B08-8CE7B1EEFF47}"
+              DTS:DTSID="{BF2042C9-5713-41A8-ABB4-989D6B00B043}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -411,7 +421,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="DebtEquityRatio"
-              DTS:DTSID="{6BC81B61-C280-48AE-B6AE-C1A357230AD2}"
+              DTS:DTSID="{863421BA-66FC-4369-90EB-D98BDBCF5861}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -419,7 +429,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="RONW"
-              DTS:DTSID="{15706466-D6A5-4649-B6FF-6B6D3EDCB475}"
+              DTS:DTSID="{BDFF96BC-B724-4453-8080-7D14ED7F2C6A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -428,7 +438,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="LatQtrYear"
-              DTS:DTSID="{79AD8CE4-00F4-499E-94DB-7687D6E4AEAA}"
+              DTS:DTSID="{72505859-B199-4181-B061-3E329F974B03}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -436,7 +446,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="LatQtrSales"
-              DTS:DTSID="{7A90C439-EFF3-4C45-8BB8-BC93C6A252DF}"
+              DTS:DTSID="{AA82B7F1-87AE-4A4A-B628-060F39BAB5FD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -444,7 +454,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="LatQtrNetProfit"
-              DTS:DTSID="{5A4F795E-2FAA-46B7-B7D1-F578941D5B04}"
+              DTS:DTSID="{0FCFAE02-715E-4307-8787-59AD8F5F32F2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -453,7 +463,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Y2DYearMonth"
-              DTS:DTSID="{8210C309-A05A-4B29-8087-67D2D7A8809E}"
+              DTS:DTSID="{03CC3898-37B2-4798-8DF0-FC3AF171F29B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -461,7 +471,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="Y2DSales"
-              DTS:DTSID="{2B40E40A-DD57-47C7-ACC7-1481F9E3AEF9}"
+              DTS:DTSID="{F7F11FE4-0357-4D14-B6F8-1E32996B538C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -469,7 +479,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="Y2DSalesGrowth"
-              DTS:DTSID="{342375B0-065B-4AD3-8F74-1B25CEBD9E76}"
+              DTS:DTSID="{802E6859-95CD-4707-9E3E-07F5F63F5572}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -477,7 +487,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="Y2DNetProfit"
-              DTS:DTSID="{0079B2CA-EB86-47A5-B273-CB98E6FE4A0B}"
+              DTS:DTSID="{F60D2964-91CD-4783-8C59-72040C828EE6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -485,7 +495,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="Y2DNetProfitGrowth"
-              DTS:DTSID="{A2A2EB2D-5275-4EDB-A17F-5846691B89C3}"
+              DTS:DTSID="{1A4C56FC-5152-4E2D-8A55-CFF053A50F03}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -493,7 +503,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="PromoterHolding"
-              DTS:DTSID="{F6D8703F-4608-4135-AF6D-DBD717D95D1A}"
+              DTS:DTSID="{0785B468-BC12-4D32-AD6D-162ED1307940}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -501,7 +511,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="PledgedHolding"
-              DTS:DTSID="{08CA5931-B618-49BF-BE80-402150A377FF}"
+              DTS:DTSID="{06CCABDE-2ACD-489A-A6C0-C1A6C764070F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -509,7 +519,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="InstitutionalHolding"
-              DTS:DTSID="{2DC67A31-33A4-4165-A9EC-F98139EE6BA0}"
+              DTS:DTSID="{57DD8791-6AA8-4149-94F8-46AE459AF199}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -517,7 +527,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="NoOfShareHolders"
-              DTS:DTSID="{2838A4F0-273F-445D-AC9A-05A4C3D87D98}"
+              DTS:DTSID="{CA227DDE-2041-4083-A925-F9D317493811}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -525,7 +535,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="MarketCap"
-              DTS:DTSID="{0514548F-C0FA-44C6-BA63-F76503F44630}"
+              DTS:DTSID="{56A90F24-A388-45E0-9676-B24582CF2D0F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -533,7 +543,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="FiftyTwoWeekHigh"
-              DTS:DTSID="{816B9065-B44C-4709-AB7F-D41F4B45A748}"
+              DTS:DTSID="{BF265608-9E00-4DAB-915F-F2CA5A77CB90}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -542,7 +552,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="EnterpriseValue"
-              DTS:DTSID="{3645048E-78D4-4BFC-91DC-82C389CC82A5}"
+              DTS:DTSID="{C57118B0-A060-47EF-98BE-73ABD73F7986}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -550,7 +560,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="PERatio"
-              DTS:DTSID="{183DCB00-0D53-435E-89DB-3A238CD76C66}"
+              DTS:DTSID="{C5F1E998-1A7C-4B39-9B99-B55F44921925}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -559,7 +569,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Sector"
-              DTS:DTSID="{16548F6B-516A-494E-913B-D2C785B815A0}"
+              DTS:DTSID="{4D609264-FD1D-48BE-8F1F-9A50263DD835}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -567,7 +577,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="Price"
-              DTS:DTSID="{8F67FB8D-1E47-439E-8CED-55351A095F55}"
+              DTS:DTSID="{1122796C-AAF8-4B46-BAA5-737AF9153E9F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -576,7 +586,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FiftyTwoWeekLow"
-              DTS:DTSID="{63DF133C-C49E-4C28-9261-7E4EE2D9FB74}"
+              DTS:DTSID="{DFDEFEA4-152F-4F54-87AA-4DBDF672D843}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -584,7 +594,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="LatQtryYearDerived"
-              DTS:DTSID="{95BC9886-C2A4-4317-963F-23CAE682416E}"
+              DTS:DTSID="{18442605-8708-4CB9-A891-D7D404A3288F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -592,7 +602,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="AuditedDerived"
-              DTS:DTSID="{6FC3DBC2-86DD-4552-BDC2-11DC3E481C36}"
+              DTS:DTSID="{A01A494E-0D67-4245-B608-E3A88EEB629D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -601,7 +611,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DT_BSESymbol"
-              DTS:DTSID="{F9362342-62DC-4181-BEFC-7E50961B06C2}"
+              DTS:DTSID="{DF41BE97-B6DB-4B3A-9C41-90E070D1685C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -610,81 +620,88 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DT_CompanyName"
-              DTS:DTSID="{8345BC8B-1E7D-4E0C-8E0A-F1EAD480E19F}"
+              DTS:DTSID="{9F25E927-01DE-49AB-9078-37353397C18A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="6"
+              DTS:DataType="14"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="DT_FaceValue"
-              DTS:DTSID="{68C625D9-9A79-4802-B7F7-76F9C5AC4806}"
+              DTS:DTSID="{086693BD-5BCC-43A4-9EE8-12D7185B8397}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="6"
+              DTS:DataType="14"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="DT_CurrentEquity"
-              DTS:DTSID="{AAFF9A70-BF9D-4C99-8A14-5F4EC9F273AF}"
+              DTS:DTSID="{1E836060-E607-4DFB-85AB-E891DC4B42DF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="6"
+              DTS:DataType="14"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="DT_BookValue"
-              DTS:DTSID="{30258B63-02F0-4096-B6C5-F7C3CA7EBD67}"
+              DTS:DTSID="{A267D4AD-CF41-4752-B761-C5E595C52A30}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="6"
+              DTS:DataType="14"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="DT_Sales"
-              DTS:DTSID="{9CCE176A-033D-4299-8BB4-887EADEA9C98}"
+              DTS:DTSID="{03BE0FC3-93DF-4EE2-8FEA-F192F78E48BA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="6"
+              DTS:DataType="14"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="DT_NetProfit"
-              DTS:DTSID="{952897E3-9AEE-4BC0-AEFF-BE0995767808}"
+              DTS:DTSID="{A555B908-0B94-479E-AA81-2EAD4156E099}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="6"
+              DTS:DataType="14"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of EPS"
-              DTS:DTSID="{A0EE2A03-11B4-46E3-977C-8442929EF412}"
+              DTS:DTSID="{85F789DF-0BF2-4380-97B9-F79AE2D47125}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="6"
+              DTS:DataType="14"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of Dividend"
-              DTS:DTSID="{C41E2FC6-1965-43B3-B5C8-4CC869FF6818}"
+              DTS:DTSID="{E9AEB661-8D91-42FD-A0AE-336BA828CD1D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:DataType="14"
-              DTS:DataScale="2"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of DebtEquityRatio"
-              DTS:DTSID="{D5CC9889-1340-4959-A764-787DD4844FBE}"
+              DTS:DTSID="{49EC533B-60A9-48A8-BBF1-5B00CB031708}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:DataType="14"
-              DTS:DataScale="2"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of RONW"
-              DTS:DTSID="{6A9DC67B-7824-4C05-8F07-8B65B41AAB66}"
+              DTS:DTSID="{DB9D9D43-15F1-4BB9-977C-6F3F3645AC1D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -692,23 +709,25 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of LatQtrYear"
-              DTS:DTSID="{DFB9159A-D450-4C1F-B835-9C1246F24F7B}"
+              DTS:DTSID="{109335DB-A605-418A-A87A-5B17930D175F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="6"
+              DTS:DataType="14"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of LatQtrSales"
-              DTS:DTSID="{8B4EE590-F860-461A-8393-741528A1E6D6}"
+              DTS:DTSID="{D6F3B602-A1C3-456E-8B53-7ECD99C4FC7B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="6"
+              DTS:DataType="14"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of LatQtrNetProfit"
-              DTS:DTSID="{38A2AB3F-1D0B-4D94-BA5E-B57FCCE34D01}"
+              DTS:DTSID="{18C0B5BA-7E70-44FE-92CB-C0839421E455}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -717,67 +736,70 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of Y2DYearMonth"
-              DTS:DTSID="{F91731CE-EA3A-427E-9EB2-029BF69696D7}"
+              DTS:DTSID="{A547CE15-A06A-463E-B2E2-DE924A61A5AD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="6"
+              DTS:DataType="14"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of Y2DSales"
-              DTS:DTSID="{659C840E-E145-4763-BCAB-464DCCC1E26B}"
+              DTS:DTSID="{5454A7DC-9772-4FC6-8934-0D5942339813}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:DataType="14"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of Y2DSalesGrowth"
-              DTS:DTSID="{B7861EAF-197B-49A2-A81C-F5296AFC7A03}"
+              DTS:DTSID="{62AA8681-6DDA-4CFE-9944-E5DEE1A88971}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="6"
+              DTS:DataType="14"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of Y2DNetProfit"
-              DTS:DTSID="{A5DE3DC1-3C9A-4A65-856B-4D5E4F5F14A6}"
+              DTS:DTSID="{A271F386-E547-4961-B395-807A4332996B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:DataType="14"
-              DTS:DataScale="2"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of Y2DNetProfitGrowth"
-              DTS:DTSID="{4D7C042A-882C-4941-954A-823F03A1B039}"
+              DTS:DTSID="{7DCDA6E5-FA39-48CC-B083-D06F995D2924}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:DataType="14"
-              DTS:DataScale="2"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of PromoterHolding"
-              DTS:DTSID="{F35A6C8E-3A7D-4335-B204-6C77100C85E0}"
+              DTS:DTSID="{DD832257-A045-4138-9F7F-8688B179EDD8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:DataType="14"
-              DTS:DataScale="2"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of PledgedHolding"
-              DTS:DTSID="{3B32FD23-E087-44DE-AA48-EA7A223781C3}"
+              DTS:DTSID="{2067091B-6382-4111-93EA-E759D9C9BB43}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:DataType="14"
-              DTS:DataScale="2"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of InstitutionalHolding"
-              DTS:DTSID="{23E7CA2B-86E1-4BF6-84DC-832B399F714F}"
+              DTS:DTSID="{B801FE5C-DE54-476F-8474-C70E8FBC88D4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -785,39 +807,43 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of NoOfShareHolders"
-              DTS:DTSID="{1A27CCE0-5848-450F-A841-B758B179EF0E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="6"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Copy of MarketCap"
-              DTS:DTSID="{6C41475B-61BD-43C3-A1BB-A62ACE2E6BBC}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="6"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Copy of FiftyTwoWeekHigh"
-              DTS:DTSID="{44D79408-DA89-4C9B-9CE7-D8F362D99060}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="6"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Copy of EnterpriseValue"
-              DTS:DTSID="{FCF7417B-8C9D-4C8C-A763-FBF4E5AE5556}"
+              DTS:DTSID="{EDFCB861-035B-4B2F-B9ED-4C1DC1709F33}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:DataType="14"
+              DTS:DataScale="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of MarketCap"
+              DTS:DTSID="{3EA3009B-15A1-496B-BD05-0E9EA7B64BB6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="14"
+              DTS:DataScale="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of FiftyTwoWeekHigh"
+              DTS:DTSID="{94B254C6-C428-47AA-8DDB-0AC09C6AE4CD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="14"
+              DTS:DataScale="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of EnterpriseValue"
+              DTS:DTSID="{17731221-330F-42EC-B1EE-00439767E2CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="14"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of PERatio"
-              DTS:DTSID="{854F8F82-65E2-4E6A-98E9-FFC767782BC6}"
+              DTS:DTSID="{5C2AAAEE-19D6-4BFE-B8A9-E3D267357188}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -826,23 +852,25 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of Sector"
-              DTS:DTSID="{E029753D-41A1-4E0F-A280-5F18438670E2}"
+              DTS:DTSID="{36818B68-6A23-4E44-9873-0D0E896C6DF3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="6"
+              DTS:DataType="14"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of Price"
-              DTS:DTSID="{58212914-A080-4E9C-9AF1-4B21062A3CDE}"
+              DTS:DTSID="{037B74B0-452D-4A9D-A79F-E654CC379686}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="6"
+              DTS:DataType="14"
+              DTS:DataScale="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of FiftyTwoWeekLow"
-              DTS:DTSID="{7B22BC3C-A4F9-4D3D-ABEE-4D4AAFEAD907}"
+              DTS:DTSID="{F5C79CA7-F9CC-4FBF-BEA6-34551DEEB95E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -850,7 +878,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of LatQtryYearDerived"
-              DTS:DTSID="{5219C99B-815B-4852-A025-6CCE7BB0F383}"
+              DTS:DTSID="{3F575ACB-520B-4E38-AD6E-6CB0DB3CBD20}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -858,7 +886,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="Copy of AuditedYear"
-              DTS:DTSID="{FA904431-6689-41F9-B351-B3452E53BEB3}"
+              DTS:DTSID="{C96B4C14-472D-4C74-B45C-3D9F425BD6B7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -866,7 +894,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{389C7998-3493-49AD-AD12-0DB7BE393D66}"
+              DTS:DTSID="{6D8D54AE-10E8-4369-B4E8-4A9806C2AF13}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -874,7 +902,298 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{1F54BA36-7AF6-48FA-BB43-942612B085D0}"
+              DTS:DTSID="{4725430B-9F9B-4CC0-87C5-68B919D854F3}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{35F6EFCA-7B03-436A-8BAC-7295C7168893}"
+      DTS:ObjectName="Flat File Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="16393"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\workspace\stock-market\integration-project\outputfile.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BSESymbol"
+              DTS:DTSID="{8FF1A6C2-51AF-4216-BF0E-C66A0AD54B02}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CompanyName"
+              DTS:DTSID="{F117778D-0E68-4DDE-8751-9988D118012B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FaceValue"
+              DTS:DTSID="{C53A4837-419C-4417-B2FC-034E3A5BBCC2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AuditedYear"
+              DTS:DTSID="{137BFB65-44DB-4311-8A18-C60B2CC0E333}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CurrentEquity"
+              DTS:DTSID="{21756743-9212-4BA8-A09F-C4098C6C6504}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BookValue"
+              DTS:DTSID="{B6758C1E-484F-45A6-897A-13FCC9980239}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sales"
+              DTS:DTSID="{84164F0F-0490-44F7-877A-B1B40ACEE37B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NetProfit"
+              DTS:DTSID="{3FB8DD25-1326-45FB-A192-779001A319CB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EPS"
+              DTS:DTSID="{83A3D0C8-5D28-4B7E-B6ED-148859E43EAA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Dividend"
+              DTS:DTSID="{53F7E2F7-37CB-49FD-B66D-2696C7E0ECA9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DebtEquityRatio"
+              DTS:DTSID="{7637C9C9-AF91-4C5B-BA87-E8617D2C7488}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="RONW"
+              DTS:DTSID="{7C61625C-5D88-4532-8FDC-AC4698DB5DB7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LatQtrYear"
+              DTS:DTSID="{7510E336-B89C-4392-ABB2-6F28820E4B12}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LatQtrSales"
+              DTS:DTSID="{9274429D-066E-4674-90FC-8CE4D0CB58A9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LatQtrNetProfit"
+              DTS:DTSID="{29CF62E6-55F8-4847-86F1-2BBA895C87D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Y2DYearMonth"
+              DTS:DTSID="{C9B6B966-8F2C-499D-AE9D-19A95050B74A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Y2DSales"
+              DTS:DTSID="{AE2D3C52-B453-40C8-825D-EB6156FB4548}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Y2DSalesGrowth"
+              DTS:DTSID="{C37058C6-D8FE-437F-8906-390EF66A43FF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Y2DNetProfit"
+              DTS:DTSID="{4E62687D-508E-439D-A5C8-7B548E0A3909}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Y2DNetProfitGrowth"
+              DTS:DTSID="{BAF8E0D8-BB0E-43AC-906C-0CBED5C24B3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PromoterHolding"
+              DTS:DTSID="{B59954BD-CFEF-4392-BC66-476AB3AF1D24}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PledgedHolding"
+              DTS:DTSID="{42A36A2A-0616-4C95-96E7-D304541BE066}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="InstitutionalHolding"
+              DTS:DTSID="{98136FCF-7E9E-4C28-9D7C-3C02AAF6A7E3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NoOfShareHolders"
+              DTS:DTSID="{0E1EEABA-C5AF-4C7E-8091-9ECE119994B7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MarketCap"
+              DTS:DTSID="{51F802EF-02B2-4265-9084-411E99B1D3D1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FiftyTwoWeekHigh"
+              DTS:DTSID="{51B7CD0A-A8F7-4A6F-9C7D-B015ABC5EEEB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EnterpriseValue"
+              DTS:DTSID="{E9B0E9A7-33E6-413D-9EDE-04591DEE3B20}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PERatio"
+              DTS:DTSID="{82BBEA49-996C-432D-8003-62EE6A818959}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sector"
+              DTS:DTSID="{DADBB5EF-4737-4F91-B7FB-7263E35FBA93}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Price"
+              DTS:DTSID="{57900C94-CF19-41A9-8650-0600339F6582}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FiftyTwoWeekLow"
+              DTS:DTSID="{C621A129-3BA8-458A-99F6-8CBA7CEC0D1C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{C3F080F2-A294-4EE2-84D0-6E39807D6C16}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{C751ACC5-D575-4794-96B3-6F392D8FC241}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1830,8 +2149,8 @@
               <connections>
                 <connection
                   refId="Package\Read excel file to Cache\DataBank file.Connections[OleDbConnection]"
-                  connectionManagerID="{38D64F60-89EA-4AB5-9C03-94F913E538CB}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager 1]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 2]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2146,7 +2465,8 @@
                       name="FaceValue" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\DataBank file.Outputs[Excel Source Output].ExternalColumns[AuditedYear]"
-                      dataType="r8"
+                      dataType="wstr"
+                      length="255"
                       name="AuditedYear" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\DataBank file.Outputs[Excel Source Output].ExternalColumns[CurrentEquity]"
@@ -2182,7 +2502,8 @@
                       name="RONW" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\DataBank file.Outputs[Excel Source Output].ExternalColumns[LatQtrYear]"
-                      dataType="r8"
+                      dataType="wstr"
+                      length="255"
                       name="LatQtrYear" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\DataBank file.Outputs[Excel Source Output].ExternalColumns[LatQtrSales]"
@@ -2235,8 +2556,7 @@
                       name="MarketCap" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\DataBank file.Outputs[Excel Source Output].ExternalColumns[FiftyTwoWeekHigh]"
-                      dataType="wstr"
-                      length="255"
+                      dataType="r8"
                       name="FiftyTwoWeekHigh" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\DataBank file.Outputs[Excel Source Output].ExternalColumns[EnterpriseValue]"
@@ -2257,8 +2577,7 @@
                       name="Price" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\DataBank file.Outputs[Excel Source Output].ExternalColumns[FiftyTwoWeekLow]"
-                      dataType="wstr"
-                      length="255"
+                      dataType="r8"
                       name="FiftyTwoWeekLow" />
                   </externalMetadataColumns>
                 </output>
@@ -2286,7 +2605,8 @@
                       name="FaceValue" />
                     <outputColumn
                       refId="Package\Read excel file to Cache\DataBank file.Outputs[Excel Source Error Output].Columns[AuditedYear]"
-                      dataType="r8"
+                      dataType="wstr"
+                      length="255"
                       lineageId="Package\Read excel file to Cache\DataBank file.Outputs[Excel Source Error Output].Columns[AuditedYear]"
                       name="AuditedYear" />
                     <outputColumn
@@ -2331,7 +2651,8 @@
                       name="RONW" />
                     <outputColumn
                       refId="Package\Read excel file to Cache\DataBank file.Outputs[Excel Source Error Output].Columns[LatQtrYear]"
-                      dataType="r8"
+                      dataType="wstr"
+                      length="255"
                       lineageId="Package\Read excel file to Cache\DataBank file.Outputs[Excel Source Error Output].Columns[LatQtrYear]"
                       name="LatQtrYear" />
                     <outputColumn
@@ -2402,14 +2723,12 @@
                       name="Price" />
                     <outputColumn
                       refId="Package\Read excel file to Cache\DataBank file.Outputs[Excel Source Error Output].Columns[FiftyTwoWeekHigh]"
-                      dataType="wstr"
-                      length="255"
+                      dataType="r8"
                       lineageId="Package\Read excel file to Cache\DataBank file.Outputs[Excel Source Error Output].Columns[FiftyTwoWeekHigh]"
                       name="FiftyTwoWeekHigh" />
                     <outputColumn
                       refId="Package\Read excel file to Cache\DataBank file.Outputs[Excel Source Error Output].Columns[FiftyTwoWeekLow]"
-                      dataType="wstr"
-                      length="255"
+                      dataType="r8"
                       lineageId="Package\Read excel file to Cache\DataBank file.Outputs[Excel Source Error Output].Columns[FiftyTwoWeekLow]"
                       name="FiftyTwoWeekLow" />
                     <outputColumn
@@ -2580,8 +2899,8 @@
               <connections>
                 <connection
                   refId="Package\Read excel file to Cache\Flat File Destination.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 2]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
@@ -3578,54 +3897,63 @@
                       name="DT_CompanyName" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[DT_FaceValue]"
-                      dataType="cy"
-                      name="DT_FaceValue" />
+                      dataType="decimal"
+                      name="DT_FaceValue"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[DT_CurrentEquity]"
-                      dataType="cy"
-                      name="DT_CurrentEquity" />
+                      dataType="decimal"
+                      name="DT_CurrentEquity"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[DT_BookValue]"
-                      dataType="cy"
-                      name="DT_BookValue" />
+                      dataType="decimal"
+                      name="DT_BookValue"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[DT_Sales]"
-                      dataType="cy"
-                      name="DT_Sales" />
+                      dataType="decimal"
+                      name="DT_Sales"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[DT_NetProfit]"
-                      dataType="cy"
-                      name="DT_NetProfit" />
+                      dataType="decimal"
+                      name="DT_NetProfit"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of EPS]"
-                      dataType="cy"
-                      name="Copy of EPS" />
+                      dataType="decimal"
+                      name="Copy of EPS"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of Dividend]"
-                      dataType="cy"
-                      name="Copy of Dividend" />
+                      dataType="decimal"
+                      name="Copy of Dividend"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of DebtEquityRatio]"
                       dataType="decimal"
                       name="Copy of DebtEquityRatio"
-                      scale="2" />
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of RONW]"
                       dataType="decimal"
                       name="Copy of RONW"
-                      scale="2" />
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of LatQtrYear]"
                       dataType="i2"
                       name="Copy of LatQtrYear" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of LatQtrSales]"
-                      dataType="cy"
-                      name="Copy of LatQtrSales" />
+                      dataType="decimal"
+                      name="Copy of LatQtrSales"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of LatQtrNetProfit]"
-                      dataType="cy"
-                      name="Copy of LatQtrNetProfit" />
+                      dataType="decimal"
+                      name="Copy of LatQtrNetProfit"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of Y2DYearMonth]"
                       codePage="1252"
@@ -3634,56 +3962,63 @@
                       name="Copy of Y2DYearMonth" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of Y2DSales]"
-                      dataType="cy"
-                      name="Copy of Y2DSales" />
+                      dataType="decimal"
+                      name="Copy of Y2DSales"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of Y2DSalesGrowth]"
                       dataType="decimal"
-                      name="Copy of Y2DSalesGrowth" />
+                      name="Copy of Y2DSalesGrowth"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of Y2DNetProfit]"
-                      dataType="cy"
-                      name="Copy of Y2DNetProfit" />
+                      dataType="decimal"
+                      name="Copy of Y2DNetProfit"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of Y2DNetProfitGrowth]"
                       dataType="decimal"
                       name="Copy of Y2DNetProfitGrowth"
-                      scale="2" />
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of PromoterHolding]"
                       dataType="decimal"
                       name="Copy of PromoterHolding"
-                      scale="2" />
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of PledgedHolding]"
                       dataType="decimal"
                       name="Copy of PledgedHolding"
-                      scale="2" />
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of InstitutionalHolding]"
                       dataType="decimal"
                       name="Copy of InstitutionalHolding"
-                      scale="2" />
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of NoOfShareHolders]"
                       dataType="i4"
                       name="Copy of NoOfShareHolders" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of MarketCap]"
-                      dataType="cy"
-                      name="Copy of MarketCap" />
+                      dataType="decimal"
+                      name="Copy of MarketCap"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of FiftyTwoWeekHigh]"
-                      dataType="cy"
-                      name="Copy of FiftyTwoWeekHigh" />
+                      dataType="decimal"
+                      name="Copy of FiftyTwoWeekHigh"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of EnterpriseValue]"
-                      dataType="cy"
-                      name="Copy of EnterpriseValue" />
+                      dataType="decimal"
+                      name="Copy of EnterpriseValue"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of PERatio]"
                       dataType="decimal"
-                      name="Copy of PERatio" />
+                      name="Copy of PERatio"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of Sector]"
                       codePage="1252"
@@ -3692,12 +4027,14 @@
                       name="Copy of Sector" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of Price]"
-                      dataType="cy"
-                      name="Copy of Price" />
+                      dataType="decimal"
+                      name="Copy of Price"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of FiftyTwoWeekLow]"
-                      dataType="cy"
-                      name="Copy of FiftyTwoWeekLow" />
+                      dataType="decimal"
+                      name="Copy of FiftyTwoWeekLow"
+                      scale="4" />
                     <externalMetadataColumn
                       refId="Package\Read excel file to Cache\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[Copy of LatQtryYearDerived]"
                       dataType="i2"
@@ -3734,7 +4071,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[MARKET].[TempDataBankNew]</property>
+                  name="OpenRowset">[MARKET].[TempDataBank]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -4368,7 +4705,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-2.33333354857248,32.5833337397044,16,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4402,7 +4741,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="12.4166671964858,41.2166668595208,16,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4472,7 +4813,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="27.2166641169127,42.4500007232031,16,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

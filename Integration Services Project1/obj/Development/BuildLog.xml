@@ -2,18 +2,18 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Insert Sector Data</Name>
-    <LastWriteTime>2020-11-15T19:34:19.9903673Z</LastWriteTime>
+    <LastWriteTime>2020-12-20T23:31:32.0549967Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Package.dtsx</Name>
-      <LastWriteTime>2020-11-14T06:38:17.6306132Z</LastWriteTime>
+      <LastWriteTime>2020-12-20T23:03:08.1393919Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>DataBankInsertionNew.dtsx</Name>
-      <LastWriteTime>2020-11-15T19:38:11.9258686Z</LastWriteTime>
+      <LastWriteTime>2020-12-20T23:31:30.9755145Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
