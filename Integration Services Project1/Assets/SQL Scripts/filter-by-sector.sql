@@ -1,13 +1,24 @@
---select * from MARKET.TempDataBank
+--select * from MARKET.TempDataBankNew
 
+sp_rename '[MARKET].[TempDataBankNew]', 'TempDataBank'
 
 SELECT DB.CompanyName
+, DB.Sales
+,DB.NetProfit
 , MARKET.PercentYield(DB.NetProfit, DB.Sales) AS  NPM
+, DB.Y2DSales
+,DB.Y2DNetProfit
 , MARKET.PercentYield(DB.Y2DNetProfit, DB.Y2DSales) AS Y2DNPM
 , MARKET.PercentYield(DB.Dividend, DB.Price) AS DividendYield
 ,DB.MarketCap
+,CAST(ROUND((DB.RONW), 2,1) AS NUMERIC(36,2)) AS RONW
+,(DB.Price) AS Price
+,(DB.FiftyTwoWeekHigh) AS FiftyTwoWeekHigh
+,(DB.FiftyTwoWeekLow) AS FiftyTwoWeekLow
+,Market.ToNumeric(DB.CurrentEquity/DB.FaceValue) AS NoOfSharesOutstanding
+,DB.Sector
 FROM MARKET.TempDataBank DB
-WHERE DB.Sector LIKE 'mining%'
+WHERE DB.Sector LIKE 'Abrasives And Grinding Wheels%'
 ORDER BY DB.MarketCap ASC
 
 --*****************Order By Dividend yield **********************
@@ -20,7 +31,7 @@ SELECT DB.CompanyName
 ,DB.Price
 ,DB.FiftyTwoWeekHigh
 ,DB.FiftyTwoWeekLow
-,MARKET.ToNumeric(DB.CurrentEquity/DB.FaceValue) AS NoOfSharesOutstanding
+,(DB.CurrentEquity/DB.FaceValue) AS NoOfSharesOutstanding
 ,DB.Sector
 FROM MARKET.TempDataBank DB
 ORDER BY DividendYield desc
@@ -32,10 +43,10 @@ SELECT DB.CompanyName
 , MARKET.PercentYield(DB.Dividend, DB.Price) AS DividendYield
 ,DB.MarketCap
 ,CAST(ROUND((DB.RONW), 2,1) AS NUMERIC(36,2)) AS RONW
-,MARKET.ToNumeric(DB.Price) AS Price
-,MARKET.ToNumeric(DB.FiftyTwoWeekHigh) AS FiftyTwoWeekHigh
-,MARKET.ToNumeric(DB.FiftyTwoWeekLow) AS FiftyTwoWeekLow
-,MARKET.ToNumeric(DB.CurrentEquity/DB.FaceValue) AS NoOfSharesOutstanding
+,(DB.Price) AS Price
+,(DB.FiftyTwoWeekHigh) AS FiftyTwoWeekHigh
+,(DB.FiftyTwoWeekLow) AS FiftyTwoWeekLow
+,Market.ToNumeric(DB.CurrentEquity/DB.FaceValue) AS NoOfSharesOutstanding
 ,DB.Sector
 FROM MARKET.TempDataBank DB
 ORDER BY DB.Sector ASC
